@@ -7,6 +7,10 @@ while($value !='q')
 {
     printf("saisir une valeur numérique ou tapez 'q' pour quitter : ");
     $value = readline();
+    if ($value == 'q')
+    {
+        continue;
+    }
     array_push($tab, $value );
 
     echo "nombre de valeurs inscrites : " . count($tab) . "\n";

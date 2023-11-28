@@ -20,8 +20,8 @@ echo "taille intermédiaire du tableau : " . count($tab) . "\n";
 
 for ($i = 15 ; $i<=17 ; $i++  )
 {
-    $key = "key . $i";
-    echo "saisir une nouvelle valeur pour l'index " . $i . " : ";
+    $key = "key".$i;
+    echo "saisir une nouvelle valeur pour l'index " . $key . " : ";
     $value = readline();
     $tab[$key] = $value;
     echo "\najout manuel de la valeur : " . $tab[$key] . "\n";
