@@ -17,7 +17,7 @@ while($monthDay<=30)
         echo "mon compte est vide et on est le " . $monthDay . " du mois.\n";
         break;
     }
-
+    echo "somme prélevée : " .$randomSub ."\n";
     echo "somme restante au jour " .$monthDay .": " . $salary . " euros. \n";
 
     $monthDay++;
