@@ -14,16 +14,16 @@ while($monthDay<=30)
     if($salary <=0)
     {
         $salary = 0;
-        echo "mon compte est vide et on est le " . $monthDay . "du mois.\n";
+        echo "mon compte est vide et on est le " . $monthDay . " du mois.\n";
         break;
     }
 
-    echo "somme restante au jour " .$monthDay .": " . $salary . "euros. \n";
+    echo "somme restante au jour " .$monthDay .": " . $salary . " euros. \n";
 
     $monthDay++;
 }
 if ($salary>0)
 {
-    echo "vous économisez" . $salary . ", félicitations !\n";
+    echo "vous économisez " . $salary . " euros, félicitations !\n";
 }
 else exit();
