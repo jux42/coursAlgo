@@ -11,15 +11,15 @@ while($monthDay<=30)
     $salary-=$randomSub;
 
 
+
+    echo "\nsomme prélevée : " .$randomSub ."\n";
+    echo "somme restante au jour " .$monthDay .": " . $salary . " euros. \n";
     if($salary <=0)
     {
         $salary = 0;
         echo "mon compte est vide et on est le " . $monthDay . " du mois.\n";
         break;
     }
-    echo "\nsomme prélevée : " .$randomSub ."\n";
-    echo "somme restante au jour " .$monthDay .": " . $salary . " euros. \n";
-
     $monthDay++;
 }
 if ($salary>0)
