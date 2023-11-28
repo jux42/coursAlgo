@@ -12,7 +12,7 @@ echo "taille initiale du tableau : " . count($tab) . "\n";
 $j =1;
 while ($j<=count($tab))
 {
-    unset($tab[$j]);
+    unset($tab[$j+1]);
     $j += 1;
 }
 
