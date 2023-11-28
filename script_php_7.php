@@ -9,8 +9,8 @@ for($i = 0; $i<30 ; $i++)
 }
 echo "taille initiale du tableau : " . count($tab) . "\n";
 
-$j =1;
-while ($j<=count($tab))
+$j =0;
+while ($j<=count($tab)-1)
 {
     unset($tab[$j+1]);
     $j += 1;
