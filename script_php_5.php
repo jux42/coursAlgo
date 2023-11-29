@@ -2,18 +2,20 @@
 
 $tab[] = null;
 $value = null;
-
+$i = 0;
 while($value !='q')
 {
+
     printf("saisir une valeur numérique ou tapez 'q' pour quitter : ");
     $value = readline();
     if ($value == 'q')
     {
         continue;
     }
-    array_push($tab, $value );
 
-    echo "nombre de valeurs inscrites : " . count($tab) . "\n";
+   $tab[$i] = $value;
+
+    echo "nombre de valeurs inscrites : " . sizeof($tab) . "\n";
     echo "somme des valeurs : " . array_sum($tab) . "\n";
 
     echo "liste des valeurs du tableau : \n";
@@ -30,6 +32,7 @@ sort($tab);
         echo $element . "\n";
     }
 
+    $i++;
 }
 
 
