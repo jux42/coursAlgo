@@ -2,8 +2,11 @@
 //
 //$fileTest = fopen('test15', 'w');
 
-$var = "blablablalbbla";
-$htmlContent = content('https://www.it-akademy.fr/');
-file_put_contents('test15', $htmlContent);
-fclose($htmlContent);
+$fileHtml = fopen('itaka.html', 'w');
+$textHtml = "https://fr.wikipedia.org/wiki/Malbolge";
+$htmlContent = file_get_contents($textHtml);
+echo $htmlContent;
+
+fputs($fileHtml, $htmlContent);
+fclose($fileHtml);
 

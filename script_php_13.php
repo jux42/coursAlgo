@@ -1,6 +1,5 @@
 <?php
 
-
 $file = fopen('ExerciceCSVScript.csv', 'r');
 $fileArrivee = fopen('moreThan5000.csv', 'w');
 
